@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+  <!--  Material  Fonts and icons     -->
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+
+       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+      <!--   Chartist JS -->
+    <script src="bower_components/chartist/dist/chartist.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="utf-8">
+  <title>CREATIVE TIM</title>
+</head>
+</head>
+<body>
+  <body>
+
+  <div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-left" id="sidebarr">
+    <button class="w3-bar-item w3-button w3-large w3-hide-large">Close&times;</button>
+    <span><h4 style="text-align: center; padding-top: 15px;"><b>CREATIVE TIM</b></h4></span>
+      <hr mb-3 style="margin :10px">
+    <a href="#" id="side-tab" class="w3-bar-item w3-button mb-2" style="text-align : left;"><i class="material-icons">dashboard</i>Dashboard</a>
+    <a href="#" id="side-tab"class="w3-bar-item w3-button mb-3" style="text-align : left"><i class="material-icons">account_circle</i>User Profile</a>
+    <a href="#" id="side-tab" class="w3-bar-item w3-button mb-3" style="text-align : left"><i class="material-icons">list</i>Table List</a>
+    <a href="#" id="side-tab" class="w3-bar-item w3-button mb-3" style="text-align : left"><i class="material-icons">library_books</i>Typography</a>
+    <a href="#" id="side-tab" class="w3-bar-item w3-button mb-3" style="text-align : left"><i class="material-icons">bubble_chart</i>Icons</a>
+    <a href="#" id="side-tab" class="w3-bar-item w3-button mb-3" style="text-align : left"><i class="material-icons">my_location</i>Maps</a>
+    <a href="#" id="side-tab" class="w3-bar-item w3-button mb-3" style="text-align : left"><i class="material-icons">notifications</i>Notifications</a>
+    <a href="#" id="side-tab" class="w3-bar-item w3-button mb-3" style="text-align : left"><i class="material-icons">language</i>RTL Support</a>
+    <a href="#" id="side-tab" class="w3-bar-item w3-button mb-3" style="text-align : left"><i class="material-icons">update</i>Upgrade to PRO</a>
+  </div>
+
+  <div class="w3-main" style="margin-left:240px">
+  <div class="w3">
+    <button class="w3-button w3 w3-xlarge w3-hide-large">&#9776;</button>
+    <div class="w3-container">
+
+
+      <nav class="navbar navbar-expand mb-2" style="background-color: transparent !important; padding-top : 10px;box-shadow : none;">
+        <span class="navbar-brand" href="#">Dashboard</span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333"
+          aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
+          <ul class="navbar-nav ml-auto" style="margin : 0px 50px;">
+            <form class="form-inline ml-auto">
+            <div class="md-form my-0">
+              <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+              <button type="submit" class="btn" style="padding: 14px; border-radius: 500px;color : black;background-color : white;"><i class="fas fa-search fa-lg (33% increase)"></i>
+              </button>
+            </div>
+          </form>
+            <li class="nav-item social">
+              <a class="nav-link">
+                <i class="fas fa-th-large"></i>
+              </a>
+            </li>
+            <li class="nav-item social">
+              <a class="nav-link">
+                <i class="fas fa-bell"></i>
+              </a>
+            </li>
+            <li class="nav-item dropdown social">
+              <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-user"></i>
+              </a>
+
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+
+
+  <a href="#" class="float">
+  <i class="material-icons my-float">settings</i>
+  </a>
+
+
+
+  <div class="w3-container">
+      <div class="container-fluid">
+              <div class="row" style="margin-top: 20px;">
+              <div class="col-lg-3 col-md-6 col-sm-6 p-3">
+                <div class="card">
+                  <div class="card-header">
+                      <div class="card-icon">
+                        <i class="far fa-clone fa-2x p-4" style="background-color: orange; color: white;border-radius: 5px; position: absolute; top: -25px;"></i>
+                        <p class="card-category text-right">Used Space</p> <h3 class="card-title text-right">49/50<small> GB</small></h3>
+                      </div>
+                  </div>
+                  <div class="card-footer">
+                    <div class="stats">
+                      <i class="fas fa-exclamation-triangle" style="color: red;"></i>
+                        Get More Space...
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6 p-3">
+                <div class="card">
+                  <div class="card-header">
+                    <div class="card-icon">
+                      <i class="fas fa-store-alt fa-2x p-4" style="background-color: #55a630; color: white; border-radius: 5px; position: absolute; top: -25px;"></i>
+                      <p class="card-category text-right">Revenue</p>
+                      <h3 class="card-title text-right">$34,245</h3>
+                    </div>
+                  </div>
+                  <div class="card-footer">
+                    <div class="stats">
+                      <i class="fas fa-calendar-week"></i> Last 24 Hours
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6 p-3">
+                <div class="card">
+                  <div class="card-header">
+                    <div class="card-icon">
+                      <i class="fas fa-info-circle fa-2x p-4" style="background-color: red; color: white;border-radius: 5px; position: absolute; top: -25px;"></i>
+                      <p class="card-category text-right">Fixed Issues</p>
+                      <h3 class="card-title text-right">75</h3>
+                    </div>
+                  </div>
+                  <div class="card-footer">
+                    <div class="stats">
+                      <i class="fas fa-tags"></i> Tracked from Github
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6 p-3">
+                <div class="card">
+                  <div class="card-header">
+                    <div class="card-icon">
+                      <i class="fab fa-twitter fa-2x p-4" style="background-color: #0abdf7; color: white;border-radius: 5px; position: absolute; top: -25px;"></i>
+                      <p class="card-category text-right">Followers</p>
+                      <h3 class="card-title text-right">+245</h3>
+                    </div>
+                  </div>
+                  <div class="card-footer">
+                    <div class="stats">
+                      <i class="fas fa-history"></i> Just Updated
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+              <div class="row" style="margin-top: 10px;">
+              <div class="col-md-4">
+                <div class="card">
+
+                  <div class="card-body">
+                    <h4 class="card-title">Daily Sales</h4>
+                    <p class="card-category">
+                      <span class="text-success"><i class="fas fa-arrow-up"></i> 55% </span> increase in today sales.</p>
+                  </div>
+                  <div class="card-footer">
+                    <div class="stats">
+                      <i class="far fa-clock"></i> updated 4 minutes ago
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card card-chart">
+
+                  <div class="card-body">
+                    <h4 class="card-title">Email Subscriptions</h4>
+                    <p class="card-category">Last Campaign Performance</p>
+                  </div>
+                  <div class="card-footer">
+                    <div class="stats">
+                      <i class="far fa-clock"></i> campaign sent 2 days ago
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card card-chart">
+
+                  <div class="card-body">
+                    <h4 class="card-title">Completed Tasks</h4>
+                    <p class="card-category">Last Campaign Performance</p>
+                  </div>
+                  <div class="card-footer">
+                    <div class="stats">
+                      <i class="far fa-clock"></i> campaign sent 2 days ago
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="row p-4">
+            <div class="col-lg-6 col-md-12">
+              <div class="card m-3 p-2">
+                <div class="card-header card-header-tabs m-0 p-4" style="color: white; background-image: linear-gradient(to right, #b744b8, #b80bce);">
+                  <div class="nav-tabs-navigation">
+                    <div class="nav-tabs-wrapper">
+                      <span class="nav-tabs-title" style="float: left; margin-right: 15px; padding-top: 5px;">Tasks:</span>
+                      <ul class="nav nav-tabs" data-tabs="tabs" style="float: left;border-bottom:0px;border-radius : 10px;">
+                        <li class="nav-item">
+                          <a class="nav-link active" href="#" data-toggle="tab"><i class="fas fa-bug"></i> Bugs</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#" data-toggle="tab"><i class="fas fa-code"></i> Website</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#" data-toggle="tab"><i class="fas fa-cloud"></i> Server</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                    <div class="tab">
+                      <table class="table">
+                        <tbody>
+                          <tr>
+                            <td>
+                              <div class="form-check">
+                                <label class="form-check-label">
+                                  <input class="form-check-input" type="checkbox" value="" checked>
+                                  <span class="form-check-sign">
+                                    <span class="check"></span>
+                                  </span>
+                                </label>
+                              </div>
+                            </td>
+                            <td>Sign contract for "What are conference organizers afraid of?"</td>
+                            <td class="td-actions text-right">
+                              <button type="button"  class="btn btn-link btn-sm" id="edit">
+                                <i class="fas fa-pen fa-2x"></i>
+                              </button>
+                            </td>
+                            <td class="td-actions">
+                                <button type="button" class="btn  btn-link btn-sm" id="close">
+                                <i class="fas fa-times fa-2x"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="form-check">
+                                <label class="form-check-label">
+                                  <input class="form-check-input" type="checkbox" value="">
+                                  <span class="form-check-sign">
+                                    <span class="check"></span>
+                                  </span>
+                                </label>
+                              </div>
+                            </td>
+                            <td>Lines From Great Russian Literature? Or E-mails From My Boss?</td>
+                            <td class="td-actions text-right">
+                              <button type="button"  class="btn btn-link btn-sm" id="edit">
+                                <i class="fas fa-pen fa-2x"></i>
+                              </button>
+                            </td>
+                            <td class="td-actions">
+                                <button type="button" class="btn  btn-link btn-sm" id="close">
+                                <i class="fas fa-times fa-2x"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="form-check">
+                                <label class="form-check-label">
+                                  <input class="form-check-input" type="checkbox" value="">
+                                  <span class="form-check-sign">
+                                    <span class="check"></span>
+                                  </span>
+                                </label>
+                              </div>
+                            </td>
+                            <td>Flooded: One year later, assessing what was lost and what was found when a ravaging rain swept through metro Detroit
+                            </td>
+                            <td class="td-actions text-right">
+                              <button type="button"  class="btn btn-link btn-sm" id="edit"><i class="fas fa-pen fa-2x"></i></button>
+                            </td>
+                            <td class="td-actions">
+                                <button type="button" class="btn  btn-link btn-sm" id="close"><i class="fas fa-times fa-2x"></i></button>
+                            </td>
+                          </tr>
+
+                        </tbody>
+                      </table>
+                   </div>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="col-lg-6 col-md-12">
+              <div class="card m-3 p-2">
+                <div class="card-header" style="color: white; background-image: linear-gradient(to right,#ffb400, #f75c03);">
+                  <h4 class="card-title">Employees Stats</h4>
+                  <p class="card-category">New employees on 15th September, 2016</p>
+                </div>
+                <div class="card-body table-responsive">
+                  <table class="table table-hover">
+                    <thead style="color:#f75c03;">
+                        <th><h5>ID</h5></th>
+                        <th><h5>Name</h5></th>
+                        <th><h5>Salary</h5></th>
+                        <th><h5>Country</h5></th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td><b>Dakota Rice</b></td>
+                        <td>$36,738</td>
+                        <td>Nigeria</td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td><b>Minerva Hooper</b></td>
+                        <td>$23,789</td>
+                        <td>Curacao</td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td><b>Sage Rodriguez</b></td>
+                        <td>$56,142</td>
+                        <td>Neitherlands</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+
+            <footer class="footer">
+            <div class="container-fluid">
+              <nav class="float-left">
+                <ul>
+                  <li><a href="#">Creative Tim  </a></li>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Liceneses</a></li>
+                </ul>
+              </nav>
+              <div class="copyright float-right">&copy; 2020, made with <i class="fas fa-heart"></i> by
+                <a href="#" style="color: #bc1bbc;">Creative Tim</a> for a better web.
+              </div>
+            </div>
+            </footer>
+
+    </div>
+  </div>
+</div>
+
+<script>
+function w3_open() {
+  document.getElementById("sidebarr").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("sidebarr").style.display = "none";
+}
+</script>
+
+
+
+
+</body>
+</html>
